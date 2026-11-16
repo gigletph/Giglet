@@ -285,7 +285,7 @@ async function gask(q){say(q,1);if(await aiAsk(q))return;const k=KB.find(k=>k[0]
 $("#cb").onclick=()=>{$("#chat").classList.toggle("open");if(!$("#gm").children.length){say(T().hi);$("#gc").innerHTML=["How do I apply?","How do I get paid?","Is it safe?","What are badges?"].map(x=>`<button>${x}</button>`).join("");$("#gc").onclick=e=>e.target.tagName=="BUTTON"&&gask(e.target.textContent)}};
 $("#gf").onsubmit=e=>{e.preventDefault();const v=$("#gi").value.trim();if(v){gask(v);$("#gi").value=""}};
 /* ================= v4: professional features + stability fixes ================= */
-const FEE=20,MINR=65,FEE_PAY_INFO="GCash 09XX XXX XXXX (edit this line in index.html)",PAYM=["GCash","Maya","Cash","Bank transfer"];
+const FEE=20,MINR=65,FEE_PAY_INFO="GCash 0966 137 2014 (edit this line in index.html)",PAYM=["GCash","Maya","Cash","Bank transfer"];
 let DUP=null,BUSY=false,AIST=null;
 const tdy=()=>new Date().toISOString().slice(0,10),filled=g=>S.apps.filter(a=>a.gig_id==g.id&&["Accepted","Completed"].includes(a.status)).length,pst=a=>a.pay_status||"unpaid",amt=a=>gg(a.gig_id)?P(gg(a.gig_id)):0;
 const dirty=()=>[...document.querySelectorAll("#app input,#app textarea")].some(i=>i.value&&!["checkbox","file","date","number","hidden","radio"].includes(i.type)&&!(i.id||"").startsWith("f"));
