@@ -1,4 +1,4 @@
-# Giglet website (v4)
-- `index.html` is the whole website (connected to Supabase).
-- `functions/api/gigi.js` lets Gigi answer any question using free Cloudflare Workers AI.
-Follow GIGLET-UPGRADE-V4.md to update your live site.
+# Giglet website (v6)
+Upload everything in this folder to your GitHub repo (keep the `functions` folder as is):
+index.html, sw.js, manifest.webmanifest, favicon.svg, icon-192.png, icon-512.png, functions/api/gigi.js
+See GIGLET-V6-STEPS.md.
